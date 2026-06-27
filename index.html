@@ -77,6 +77,21 @@ a{color:inherit;text-decoration:none}
 .enter-btn svg{width:11px;height:11px}
 .landing-venue{font-family:'Cinzel',serif;font-size:8px;letter-spacing:.38em;color:#6b5a4a;opacity:0;animation:fadeIn .8s ease forwards 1.65s;margin-top:18px;padding:0 20px}
 
+/* ===== LANDING — gold -> red (scoped to #landing only) ===== */
+#landing{--gold:#8b1a1a;--gold2:#a52020}
+#landing::before{border-color:rgba(139,26,26,.4)}
+#landing::after{border-color:rgba(139,26,26,.18)}
+#landing .ornament.tl{border-top-color:#8b1a1a;border-left-color:#8b1a1a}
+#landing .ornament.tr{border-top-color:#8b1a1a;border-right-color:#8b1a1a}
+#landing .ornament.bl{border-bottom-color:#8b1a1a;border-left-color:#8b1a1a}
+#landing .ornament.br{border-bottom-color:#8b1a1a;border-right-color:#8b1a1a}
+#landing svg [fill="#9a7b3a"]{fill:#8b1a1a}
+#landing svg [fill="#c9a96e"]{fill:#a52020}
+#landing svg [fill="rgba(201,169,110,.5)"]{fill:#a52020}
+#landing svg [stroke="#9a7b3a"]{stroke:#8b1a1a}
+#landing svg [stroke="rgba(201,169,110,.3)"]{stroke:rgba(139,26,26,.4)}
+#landing svg [stroke="rgba(201,169,110,.12)"]{stroke:rgba(139,26,26,.18)}
+#landing div[style*="5.5px"]{color:rgba(139,26,26,.5)!important}
 #main{display:none}
 #main.show{display:block}
 
